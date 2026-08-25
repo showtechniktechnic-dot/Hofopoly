@@ -1,1 +1,1 @@
-HOFOPOLY Cloudflare upload. Upload this ZIP as a new deployment in your Cloudflare Pages project.
+HOFOPOLY – Upload index.html directly to GitHub Pages or Cloudflare Pages.
