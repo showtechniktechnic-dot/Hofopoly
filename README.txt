@@ -1,0 +1,1 @@
+HOFOPOLY Cloudflare upload. Upload this ZIP as a new deployment in your Cloudflare Pages project.
