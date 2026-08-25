@@ -1,1 +1,2 @@
-HOFOPOLY – Upload index.html directly to GitHub Pages or Cloudflare Pages.
+HOFOPOLY GitHub Pages Upload
+Upload index.html directly to the repository root.
