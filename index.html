@@ -40,7 +40,7 @@ await load();
 if(!game){renderNoGame();return;}
 render();
 sb.channel('hofopoly-live').on('postgres_changes',{event:'*',schema:'public'},async()=>{await load();render()}).subscribe();
-}catch(e){console.error(e);document.getElementById('app').innerHTML='<div class="login"><div class="loginbox"><h1>HOF<span>OPOLY</span></h1><h2>Verbindungsfehler</h2><p>'+esc(e?.message||e)+'</p><p class="muted">Supabase: '+esc(URL)+'</p><button class="primary" onclick="location.reload()">Erneut versuchen</button></div></div>';}
+}catch(e){console.error(e);document.getElementById('app').innerHTML='<div class="login"><div class="loginbox"><h1>HOF<span>OPOLY</span></h1><h2>Verbindungsfehler</h2><p>'+esc(e?.message||e)+'</p><p class="muted">Supabase: '+esc(SUPABASE_URL)+'</p><button class="primary" onclick="location.reload()">Erneut versuchen</button></div></div>';}
 }function logout(){localStorage.removeItem('hofopoly');location.reload()}
 function renderNoGame(){
   document.getElementById('app').innerHTML=headerNoGame()+`
